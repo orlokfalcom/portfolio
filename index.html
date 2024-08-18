@@ -4,42 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio Ronaldo Luiz Coutinho</title>
-
-    <!-- Link para o arquivo CSS externo.
-         Colocado no <head> para permitir o carregamento e renderização do CSS antes do conteúdo da página -->
+    
+    <!-- Importa o arquivo de estilos externos -->
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Sugestão de melhoria: incluir as tags de pré-carregamento de fontes para melhorar o desempenho -->
+    
+    <!-- Sugestão de pré-carregamento para otimizar o carregamento de fontes -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Cabeçalho da página com o título e navegação -->
+<!-- Cabeçalho contendo o título e o menu de navegação -->
 <header>
     <h1>Meu Portfólio Ronaldo Luiz Coutinho</h1>
     <nav>
-        <!-- Links de navegação para diferentes seções da página -->
-        <a href="#sobre">Sobre Mim</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
+        <!-- Links de navegação para as seções da página -->
+        <a href="#sobre" class="nav-link">Sobre Mim</a>
+        <a href="#projetos" class="nav-link">Projetos</a>
+        <a href="#contato" class="nav-link">Contato</a>
     </nav>
 </header>
 
-<!-- Seção "Sobre Mim" -->
+<!-- Seção "Sobre Mim" com uma breve descrição e uma imagem -->
 <section id="sobre">
     <h2>Sobre Mim</h2>
-    <!-- Breve descrição pessoal -->
     <p>Olá! Meu nome é Ronaldo Luiz Coutinho e sou técnico de informática e desenvolvedor. Tenho experiência em programação orientada a objetos com Java, desenvolvimento web, e suporte técnico. Estou sempre buscando aprender mais e superar minhas próprias limitações.</p>
-    <!-- Imagem ilustrativa com atributos alt para acessibilidade -->
     <img src="url-da-imagem-de-sobre-mim.jpg" alt="Imagem sobre Ronaldo Luiz Coutinho">
 </section>
 
-<!-- Seção "Projetos" -->
+<!-- Seção "Projetos" que lista os principais trabalhos -->
 <section id="projetos">
     <h2>Projetos</h2>
 
-    <!-- Primeiro projeto -->
     <div class="project">
         <img src="url-da-imagem-do-projeto-1.jpg" alt="Imagem do Projeto 1">
         <h3>Projeto 1</h3>
@@ -47,7 +43,6 @@
         <a href="[link do projeto]" target="_blank">Ver Projeto</a>
     </div>
 
-    <!-- Segundo projeto -->
     <div class="project">
         <img src="url-da-imagem-do-projeto-2.jpg" alt="Imagem do Projeto 2">
         <h3>Projeto 2</h3>
@@ -56,7 +51,7 @@
     </div>
 </section>
 
-<!-- Seção "Contato" -->
+<!-- Seção "Contato" com informações para entrar em contato -->
 <section id="contato">
     <h2>Contato</h2>
     <p>Você pode me contatar através do seguinte e-mail: ronaldo@example.com</p>
@@ -64,9 +59,10 @@
 
 <!-- Rodapé da página -->
 <footer>
-    &copy; 2024 Meu Portfólio <!-- Informação de copyright -->
+    &copy; 2024 Meu Portfólio
 </footer>
 
-<!-- Sugestão de melhoria: Scripts JS (se houver) devem ser carregados no final da página para não bloquear o carregamento -->
+<!-- Adiciona o arquivo JavaScript externo no final para melhorar o desempenho -->
+<script src="scripts.js"></script>
 </body>
 </html>

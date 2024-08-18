@@ -1,68 +1,69 @@
-/* Reset de margens e preenchimentos padrão para consistência entre navegadores */
+/* Reset de margens e preenchimentos para garantir consistência entre navegadores */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura e altura do elemento */
+    box-sizing: border-box;
 }
 
-/* Estilo para o corpo da página */
+/* Estilo base para o corpo da página */
 body {
-    font-family: Arial, sans-serif; /* Define a fonte padrão */
-    background-color: #f4f4f4; /* Cor de fundo cinza claro */
-    line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade */
-    /* Sugestão de melhoria: O uso de Arial é uma escolha segura, pois é uma fonte padrão no sistema, não necessitando download adicional */
+    font-family: Arial, sans-serif; /* Define a fonte principal */
+    background-color: #f4f4f4; /* Define a cor de fundo */
+    line-height: 1.6; /* Define o espaçamento entre linhas */
 }
 
-/* Estilo para o cabeçalho */
+/* Estilo para o cabeçalho da página */
 header {
-    background-color: #333; /* Fundo cinza escuro */
-    color: white; /* Texto branco */
-    padding: 20px 0; /* Espaçamento superior e inferior de 20px */
-    text-align: center; /* Centraliza o texto */
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto no cabeçalho */
+    padding: 20px 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo do cabeçalho */
 }
 
 /* Estilo para o menu de navegação */
 nav {
-    margin-top: 10px; /* Margem superior de 10px */
+    margin-top: 10px;
 }
 
 nav a {
     color: white; /* Cor dos links de navegação */
-    margin: 0 15px; /* Margem entre os links */
-    text-decoration: none; /* Remove sublinhado dos links */
-    /* Sugestão de melhoria: pode-se considerar adicionar transições suaves em :hover para melhorar a experiência do usuário */
+    margin: 0 15px; /* Espaçamento entre os links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: color 0.3s; /* Adiciona uma transição suave na cor */
+}
+
+/* Efeito de hover para os links de navegação */
+nav a:hover {
+    color: #ccc; /* Altera a cor ao passar o mouse sobre o link */
 }
 
 /* Estilo para as seções da página */
 section {
-    padding: 20px; /* Espaçamento interno de 20px */
-    max-width: 800px; /* Largura máxima de 800px para a seção */
-    margin: auto; /* Centraliza horizontalmente a seção */
+    padding: 20px;
+    max-width: 800px; /* Limita a largura máxima */
+    margin: auto; /* Centraliza a seção */
 }
 
-/* Estilo para os projetos */
+/* Estilo para os blocos de projeto */
 .project {
-    background-color: white; /* Fundo branco para os projetos */
-    margin-bottom: 20px; /* Espaçamento inferior de 20px */
-    padding: 15px; /* Espaçamento interno de 15px */
+    background-color: white; /* Fundo branco para o bloco */
+    margin-bottom: 20px; /* Espaçamento inferior entre os blocos */
+    padding: 15px;
     border-radius: 5px; /* Bordas arredondadas */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra leve para o projeto */
-    /* Sugestão de melhoria: utilizar uma sombra leve em vez de imagens pode ajudar no desempenho */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra leve para destacar o bloco */
 }
 
-/* Estilo para as imagens dentro dos projetos */
+/* Estilo para as imagens dos projetos */
 .project img {
-    width: 100%; /* Largura total da imagem */
-    border-radius: 5px; /* Bordas arredondadas na imagem */
-    margin-bottom: 10px; /* Espaçamento inferior de 10px */
-    /* Sugestão de melhoria: utilizar formatos de imagem otimizados (como WebP) pode melhorar o tempo de carregamento */
+    width: 100%; /* Imagem ocupa toda a largura do bloco */
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-/* Estilo para o rodapé */
+/* Estilo para o rodapé da página */
 footer {
-    text-align: center; /* Centraliza o texto */
-    padding: 20px; /* Espaçamento interno de 20px */
-    background-color: #333; /* Fundo cinza escuro */
-    color: white; /* Texto branco */
-    /* Sugestão de melhoria: certifique-se de que o conteúdo do rodapé seja mínimo para reduzir o impacto no desempenho */
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
