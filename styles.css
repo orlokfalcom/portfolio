@@ -4,6 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Estilo para a logo */
+.logo {
+    width: 100px; /* Define a largura da logo */
+    height: auto; /* Mantém a proporção da logo */
+    display: block; /* Faz com que a logo seja um bloco separado */
+    margin: 0 auto 10px; /* Centraliza a logo e adiciona espaço inferior */
+}
 
 /* Estilo base para o corpo da página */
 body {
