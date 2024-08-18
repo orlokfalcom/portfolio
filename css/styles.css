@@ -8,13 +8,14 @@
 /* Estilo base para o corpo da página */
 body {
     font-family: Arial, sans-serif; /* Define a fonte principal */
-    background-color: #f4f4f4; /* Define a cor de fundo */
+    background-color: #ffffff; /* Cor de fundo */
     line-height: 1.6; /* Define o espaçamento entre linhas */
+    color: #333333; /* Cor do texto */
 }
 
 /* Estilo para o cabeçalho com alinhamento flexível */
 header {
-    background-color: #333;
+    background-color: #003366; /* Azul Escuro */
     color: white;
     padding: 20px 0;
     display: flex; /* Usa Flexbox para alinhamento */
@@ -47,7 +48,7 @@ nav {
 /* Estilo para os botões de navegação */
 .nav-btn {
     display: inline-block; /* Faz o botão se comportar como um bloco em linha */
-    background-color: #007bff; /* Cor de fundo do botão */
+    background-color: #007bff; /* Azul Claro */
     color: white; /* Cor do texto do botão */
     padding: 10px 20px; /* Adiciona padding para os botões */
     text-decoration: none; /* Remove o sublinhado do texto */
@@ -78,25 +79,25 @@ section {
 
 /* Estilo para os blocos de projeto */
 .project {
-    background-color: white; /* Fundo branco para o bloco */
+    background-color: #ffffff; /* Fundo branco para o bloco */
     margin-bottom: 20px; /* Espaçamento inferior entre os blocos */
-    padding: 15px;
+    padding: 15px 25px 20px 25px; /* Margens internas: cima, direita, baixo, esquerda */
     border-radius: 5px; /* Bordas arredondadas */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra leve para destacar o bloco */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar o bloco */
 }
 
 /* Estilo para as imagens dos projetos */
 .project img {
-    width: 25%; /* Imagem ocupa toda a largura do bloco */
+    width: 100%; /* Imagem ocupa toda a largura do bloco */
     border-radius: 5px;
     margin-bottom: 10px;
     height: auto; /* Mantém a proporção da imagem */
 }
 
-/* Estilo para o rodapé da página */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Adiciona 20px de padding ao redor do conteúdo */
+    background-color: #003366; /* Azul Escuro */
+    color: white; /* Cor do texto */
+    margin: 20px 0; /* Adiciona uma margem de 20px acima e abaixo do rodapé */
 }
