@@ -4,64 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio Ronaldo Luiz Coutinho</title>
-    
-    <!-- Estilos internos para a página -->
-    <style>
-        /* Estilo para o corpo da página */
-        body {
-            font-family: Arial, sans-serif; /* Define a fonte padrão */
-            margin: 0; /* Remove margens padrão do corpo */
-            padding: 0; /* Remove espaçamento interno padrão do corpo */
-            background-color: #f4f4f4; /* Cor de fundo cinza claro */
-        }
 
-        /* Estilo para o cabeçalho */
-        header {
-            background-color: #333; /* Fundo cinza escuro */
-            color: white; /* Texto branco */
-            padding: 20px 0; /* Espaçamento superior e inferior de 20px */
-            text-align: center; /* Centraliza o texto */
-        }
+    <!-- Link para o arquivo CSS externo.
+         Colocado no <head> para permitir o carregamento e renderização do CSS antes do conteúdo da página -->
+    <link rel="stylesheet" href="styles.css">
 
-        /* Estilo para o menu de navegação */
-        nav {
-            margin-top: 10px; /* Margem superior de 10px */
-        }
-        nav a {
-            color: white; /* Cor dos links de navegação */
-            margin: 0 15px; /* Margem entre os links */
-            text-decoration: none; /* Remove sublinhado dos links */
-        }
-
-        /* Estilo para as seções da página */
-        section {
-            padding: 20px; /* Espaçamento interno de 20px */
-            max-width: 800px; /* Largura máxima de 800px para a seção */
-            margin: auto; /* Centraliza horizontalmente a seção */
-        }
-
-        /* Estilo para os projetos */
-        .project {
-            background-color: white; /* Fundo branco para os projetos */
-            margin-bottom: 20px; /* Espaçamento inferior de 20px */
-            padding: 15px; /* Espaçamento interno de 15px */
-            border-radius: 5px; /* Bordas arredondadas */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra leve para o projeto */
-        }
-
-        /* Estilo para as imagens dentro dos projetos */
-        .project img {
-            width: 100%; /* Largura total da imagem */
-            border-radius: 5px; /* Bordas arredondadas na imagem */
-            margin-bottom: 10px; /* Espaçamento inferior de 10px */
-        }
-    </style>
+    <!-- Sugestão de melhoria: incluir as tags de pré-carregamento de fontes para melhorar o desempenho -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Cabeçalho da página -->
+<!-- Cabeçalho da página com o título e navegação -->
 <header>
-    <h1>Meu Portfólio Ronaldo Luiz Coutinho</h1> <!-- Título principal -->
+    <h1>Meu Portfólio Ronaldo Luiz Coutinho</h1>
     <nav>
         <!-- Links de navegação para diferentes seções da página -->
         <a href="#sobre">Sobre Mim</a>
@@ -72,44 +28,45 @@
 
 <!-- Seção "Sobre Mim" -->
 <section id="sobre">
-    <h2>Sobre Mim</h2> <!-- Subtítulo da seção -->
-    <p>Olá! Meu nome é Ronaldo Luiz Coutinho e sou técnico de informática e desenvolvedor. Tenho experiência em programação orientada a objetos com Java, desenvolvimento web, e suporte técnico. Estou sempre buscando aprender mais e superar minhas próprias limitações.</p> <!-- Breve descrição pessoal -->
-    <img src="url-da-imagem-de-sobre-mim.jpg" alt="Imagem sobre Ronaldo Luiz Coutinho" style="width:100%; border-radius: 5px; margin-top: 10px;"> <!-- Imagem ilustrativa -->
+    <h2>Sobre Mim</h2>
+    <!-- Breve descrição pessoal -->
+    <p>Olá! Meu nome é Ronaldo Luiz Coutinho e sou técnico de informática e desenvolvedor. Tenho experiência em programação orientada a objetos com Java, desenvolvimento web, e suporte técnico. Estou sempre buscando aprender mais e superar minhas próprias limitações.</p>
+    <!-- Imagem ilustrativa com atributos alt para acessibilidade -->
+    <img src="url-da-imagem-de-sobre-mim.jpg" alt="Imagem sobre Ronaldo Luiz Coutinho">
 </section>
 
 <!-- Seção "Projetos" -->
 <section id="projetos">
-    <h2>Projetos</h2> <!-- Subtítulo da seção -->
+    <h2>Projetos</h2>
 
     <!-- Primeiro projeto -->
     <div class="project">
-        <img src="url-da-imagem-do-projeto-1.jpg" alt="Imagem do Projeto 1"> <!-- Imagem ilustrativa do projeto -->
-        <h3>Projeto 1</h3> <!-- Título do projeto -->
-        <p>Descrição do projeto 1. Tecnologias usadas: HTML, CSS, JavaScript.</p> <!-- Descrição do projeto -->
-        <a href="[link do projeto]" target="_blank">Ver Projeto</a> <!-- Link para visualizar o projeto -->
+        <img src="url-da-imagem-do-projeto-1.jpg" alt="Imagem do Projeto 1">
+        <h3>Projeto 1</h3>
+        <p>Descrição do projeto 1. Tecnologias usadas: HTML, CSS, JavaScript.</p>
+        <a href="[link do projeto]" target="_blank">Ver Projeto</a>
     </div>
 
     <!-- Segundo projeto -->
     <div class="project">
-        <img src="url-da-imagem-do-projeto-2.jpg" alt="Imagem do Projeto 2"> <!-- Imagem ilustrativa do projeto -->
-        <h3>Projeto 2</h3> <!-- Título do projeto -->
-        <p>Descrição do projeto 2. Tecnologias usadas: HTML, CSS, JavaScript.</p> <!-- Descrição do projeto -->
-        <a href="[link do projeto]" target="_blank">Ver Projeto</a> <!-- Link para visualizar o projeto -->
+        <img src="url-da-imagem-do-projeto-2.jpg" alt="Imagem do Projeto 2">
+        <h3>Projeto 2</h3>
+        <p>Descrição do projeto 2. Tecnologias usadas: HTML, CSS, JavaScript.</p>
+        <a href="[link do projeto]" target="_blank">Ver Projeto</a>
     </div>
-
-    <!-- Mais projetos podem ser adicionados aqui -->
 </section>
 
 <!-- Seção "Contato" -->
 <section id="contato">
-    <h2>Contato</h2> <!-- Subtítulo da seção -->
-    <p>Você pode me contatar através do seguinte e-mail: ronaldo@example.com</p> <!-- Informação de contato -->
+    <h2>Contato</h2>
+    <p>Você pode me contatar através do seguinte e-mail: ronaldo@example.com</p>
 </section>
 
 <!-- Rodapé da página -->
-<footer style="text-align:center; padding:20px; background-color:#333; color:white;">
+<footer>
     &copy; 2024 Meu Portfólio <!-- Informação de copyright -->
 </footer>
 
+<!-- Sugestão de melhoria: Scripts JS (se houver) devem ser carregados no final da página para não bloquear o carregamento -->
 </body>
 </html>

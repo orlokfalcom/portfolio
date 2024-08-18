@@ -1,0 +1,68 @@
+/* Reset de margens e preenchimentos padrão para consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura e altura do elemento */
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    background-color: #f4f4f4; /* Cor de fundo cinza claro */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade */
+    /* Sugestão de melhoria: O uso de Arial é uma escolha segura, pois é uma fonte padrão no sistema, não necessitando download adicional */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #333; /* Fundo cinza escuro */
+    color: white; /* Texto branco */
+    padding: 20px 0; /* Espaçamento superior e inferior de 20px */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para o menu de navegação */
+nav {
+    margin-top: 10px; /* Margem superior de 10px */
+}
+
+nav a {
+    color: white; /* Cor dos links de navegação */
+    margin: 0 15px; /* Margem entre os links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    /* Sugestão de melhoria: pode-se considerar adicionar transições suaves em :hover para melhorar a experiência do usuário */
+}
+
+/* Estilo para as seções da página */
+section {
+    padding: 20px; /* Espaçamento interno de 20px */
+    max-width: 800px; /* Largura máxima de 800px para a seção */
+    margin: auto; /* Centraliza horizontalmente a seção */
+}
+
+/* Estilo para os projetos */
+.project {
+    background-color: white; /* Fundo branco para os projetos */
+    margin-bottom: 20px; /* Espaçamento inferior de 20px */
+    padding: 15px; /* Espaçamento interno de 15px */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra leve para o projeto */
+    /* Sugestão de melhoria: utilizar uma sombra leve em vez de imagens pode ajudar no desempenho */
+}
+
+/* Estilo para as imagens dentro dos projetos */
+.project img {
+    width: 100%; /* Largura total da imagem */
+    border-radius: 5px; /* Bordas arredondadas na imagem */
+    margin-bottom: 10px; /* Espaçamento inferior de 10px */
+    /* Sugestão de melhoria: utilizar formatos de imagem otimizados (como WebP) pode melhorar o tempo de carregamento */
+}
+
+/* Estilo para o rodapé */
+footer {
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno de 20px */
+    background-color: #333; /* Fundo cinza escuro */
+    color: white; /* Texto branco */
+    /* Sugestão de melhoria: certifique-se de que o conteúdo do rodapé seja mínimo para reduzir o impacto no desempenho */
+}
