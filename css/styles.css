@@ -4,13 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Estilo para a logo */
-.logo {
-    width: 100px; /* Define a largura da logo */
-    height: auto; /* Mantém a proporção da logo */
-    display: block; /* Faz com que a logo seja um bloco separado */
-    margin: 0 auto 10px; /* Centraliza a logo e adiciona espaço inferior */
-}
 
 /* Estilo base para o corpo da página */
 body {
@@ -19,32 +12,64 @@ body {
     line-height: 1.6; /* Define o espaçamento entre linhas */
 }
 
-/* Estilo para o cabeçalho da página */
+/* Estilo para o cabeçalho com alinhamento flexível */
 header {
-    background-color: #333; /* Cor de fundo do cabeçalho */
-    color: white; /* Cor do texto no cabeçalho */
-    padding: 20px 0; /* Espaçamento interno */
-    text-align: center; /* Centraliza o conteúdo do cabeçalho */
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    display: flex; /* Usa Flexbox para alinhamento */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Alinha verticalmente no centro */
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+}
+
+/* Estilo para a logo */
+.logo {
+    width: 25%; /* Define a largura da logo */
+    height: auto; /* Mantém a proporção da logo */
+    margin-right: 15px; /* Espaço entre a logo e o título */
+}
+
+/* Estilo para o título do cabeçalho */
+header h1 {
+    flex: 1; /* Faz com que o título ocupe o espaço restante */
+    text-align: center; /* Centraliza os itens de navegação */
+    margin: 0; /* Remove margem para alinhar corretamente com a logo */
 }
 
 /* Estilo para o menu de navegação */
 nav {
-    margin-top: 10px;
+    width: 100%; /* Faz o menu ocupar a largura completa */
+    text-align: center; /* Centraliza os itens de navegação */
+    margin-top: 10px; /* Adiciona espaçamento acima do menu */
 }
 
-nav a {
-    color: white; /* Cor dos links de navegação */
-    margin: 0 15px; /* Espaçamento entre os links */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    transition: color 0.3s; /* Adiciona uma transição suave na cor */
+/* Estilo para os botões de navegação */
+.nav-btn {
+    display: inline-block; /* Faz o botão se comportar como um bloco em linha */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Adiciona padding para os botões */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: bold; /* Fonte em negrito */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves para a cor de fundo e transformação */
+    margin: 0 10px; /* Adiciona espaçamento entre os botões */
 }
 
-/* Efeito de hover para os links de navegação */
-nav a:hover {
-    color: #ccc; /* Altera a cor ao passar o mouse sobre o link */
+/* Adiciona efeito de hover para os botões */
+.nav-btn:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão */
 }
 
-/* Estilo para as seções da página */
+/* Destaca o item ativo */
+.nav-btn.active {
+    background-color: #0056b3; /* Cor de fundo do item ativo */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adiciona um contorno ao redor do botão ativo */
+}
+
 section {
     padding: 20px;
     max-width: 800px; /* Limita a largura máxima */
@@ -62,9 +87,10 @@ section {
 
 /* Estilo para as imagens dos projetos */
 .project img {
-    width: 100%; /* Imagem ocupa toda a largura do bloco */
+    width: 25%; /* Imagem ocupa toda a largura do bloco */
     border-radius: 5px;
     margin-bottom: 10px;
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 /* Estilo para o rodapé da página */
