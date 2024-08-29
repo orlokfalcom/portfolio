@@ -33,7 +33,6 @@ header {
     float: left; /* Faz a logo flutuar à esquerda, permitindo que o texto envolva ao redor */
 }
 
-
 /* Estilo para o título do cabeçalho */
 header h1 {
     flex: 1; /* Faz com que o título ocupe o espaço restante */
