@@ -28,8 +28,11 @@ header {
 .logo {
     width: 25%; /* Define a largura da logo */
     height: auto; /* Mantém a proporção da logo */
-    margin-right: 15px; /* Espaço entre a logo e o título */
+    margin-right: 15px; /* Espaço entre a logo e o texto */
+    border-radius: 10px; /* Adiciona cantos arredondados com um raio de 10 pixels */
+    float: left; /* Faz a logo flutuar à esquerda, permitindo que o texto envolva ao redor */
 }
+
 
 /* Estilo para o título do cabeçalho */
 header h1 {
