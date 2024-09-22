@@ -17,8 +17,20 @@ h2 {
 }
 
 .logo {
-    border-radius: 10%; /* Logo com bordas suaves */
+    width: 150px; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    float: left; /* Faz a logo flutuar à direita */
+    margin-right: 20px; /* Espaço à esquerda da logo */
+    margin-bottom: 10px; /* Espaço abaixo da logo, se necessário */
+    margin-top: 10px; /* Espaço acima da logo, se necessário */
 }
+
+section::after {
+    content: ""; /* Clearfix para limpar o float */
+    display: table;
+    clear: both;
+}
+
 
 .list-group-item {
     border-radius: 0.5rem; /* Bordas arredondadas */
