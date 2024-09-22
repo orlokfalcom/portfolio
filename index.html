@@ -3,140 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio Ronaldo Luiz Coutinho</title>
+    <title>Meu Portfólio - Ronaldo Luiz Coutinho</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
-    <header>
-        <!-- Mantém o título e logo dentro do mesmo container -->
-        <h1>Meu Portfólio Ronaldo Luiz Coutinho</h1>
-        
-        <nav>
-            <a href="#sobre" class="nav-btn">Sobre Mim</a>
-            <a href="#experience" class="nav-btn">Experiencia profissional</a>
-            <a href="#contato" class="nav-btn">Contato</a>
-        </nav>
-    </header>
+<header class="bg-light text-center p-4">
+    <h1>Meu Portfólio - Ronaldo Luiz Coutinho</h1>
+    <nav class="nav justify-content-center mt-3">
+        <a href="#sobre" class="nav-link">Sobre Mim</a>
+        <a href="#experience" class="nav-link">Experiência Profissional</a>
+        <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+</header>
+
+<div class="container mt-5">
+    <p id="greeting" class="text-center"></p>
     
-    <p id="greeting"></p>
-    
-    <div class="sobre" id="sobre">
-        <section>
-            <h2>Resumo Profissional</h2>
-            <img src="./img/logo.png" alt="Logo de Ronaldo Luiz Coutinho" class="logo">
-            <p>Técnico de informática com mais de 30 anos de experiência desde 1992, com um histórico comprovado em atendimento a empresas como autônomo. Atuo como analista de desenvolvimento, instrutor de informática e especialista em suporte técnico. Minha carreira é marcada pela superação de desafios e adversidades, com ênfase na importância de enfrentar e superar limitações pessoais e profissionais para promover o crescimento contínuo.</p>
-            <br> <br><br></section>
+    <div class="sobre mb-5" id="sobre">
+        <h2 class="text-center">Resumo Profissional</h2>
+        <img src="./img/logo.png" alt="Logo de Ronaldo Luiz Coutinho" class="logo mb-3 mx-auto d-block" style="max-width: 150px;">
+        <p class="text-justify">Com mais de 30 anos de experiência no campo da tecnologia, comecei minha carreira como técnico de informática, sempre com a mentalidade de que superar desafios começa com superar as próprias limitações. Ao longo dessa jornada, me especializei em áreas como desenvolvimento de software, análise de sistemas e suporte técnico. Hoje, atuo como analista de desenvolvimento e instrutor, sempre buscando aprender e aplicar as mais recentes inovações tecnológicas.
 
-        <section class="experience" id="experience">
-            <h2>Experiência Profissional</h2>
-            <p><strong>Escola Estadual Filomena Catzani</strong><br>
-            Assistente Técnico<br>
-            Julho 2023 - Presente | Ribeirão das Neves, MG<br>
-            [Detalhes sobre suas responsabilidades e conquistas]</p>
-
-            <p><strong>Autônomo</strong><br>
-            Técnico de Computador e Suporte Técnico<br>
-            Junho 2023 - Agosto 2023 | Brasil<br>
-            Prestação de serviços de suporte técnico e manutenção para diversos clientes.</p>
-
-            <p><strong>Telemont</strong><br>
-            Desenhista de Projeto Elétrico<br>
-            Novembro 2022 - Junho 2023 | Belo Horizonte, MG<br>
-            Desenvolvimento e revisão de projetos elétricos, garantindo a precisão e conformidade com as normas técnicas.</p>
-
-            <p><strong>Escola Estadual Romualdo José da Costa</strong><br>
-            Professor de Informática<br>
-            Fevereiro 2021 - Novembro 2022 | Ribeirão das Neves, MG<br>
-            Ensino de informática para alunos, promovendo habilidades práticas e teóricas em tecnologia.</p>
-
-            <p><strong>Secretaria Estadual de Educação</strong><br>
-            Professor de Informática<br>
-            Setembro 2021 - Dezembro 2021 | Minas Gerais<br>
-            Responsável por instruir alunos em informática básica e avançada.</p>
-
-            <p><strong>ExpressoPrint</strong><br>
-            Artista de Fine Art<br>
-            Janeiro 2018 - Janeiro 2020 | Ribeirão das Neves, MG<br>
-            Desenvolvimento de projetos artísticos e coordenação de produção gráfica.</p>
-
-            <p><strong>Finantza</strong><br>
-            Administrador de Projetos<br>
-            Janeiro 2016 - Janeiro 2017 | Ribeirão das Neves, MG<br>
-            Coordenação de projetos, gestão de equipe, administração de banco de dados e desenvolvimento de interface HMI.</p>
-
-            <p><strong>Fernão Dias Logística</strong><br>
-            Analista de Sistemas<br>
-            Julho 2016 - Agosto 2016 | Ribeirão das Neves, MG<br>
-            Edição de website e suporte técnico a funcionários.</p>
-
-            <p><strong>Sistema Divina Providência</strong><br>
-            Instrutor de Informática<br>
-            Março 2014 - Junho 2016 | Ribeirão das Neves, MG<br>
-            Ensino de informática para turmas introdutórias infantis, com foco no desenvolvimento de habilidades básicas.</p>
-
-            <p><strong>Esferatech Serviços de Tecnologia</strong><br>
-            Analista Jr<br>
-            Junho 2012 - Setembro 2014<br>
-            Suporte técnico para jornalistas durante a Copa das Confederações 2013.</p>
-
-            <p><strong>Brainstron do Brasil</strong><br>
-            Técnico de Campo<br>
-            Janeiro 2004 - Julho 2013 | Belo Horizonte e Região, MG<br>
-            Atendimento técnico a clientes e suporte em projetos de tecnologia.</p>
-
-            <p><strong>Jorge Luiz Carvalho ME</strong><br>
-            Técnico de Suporte Desenvolvedor<br>
-            Julho 2010 - Janeiro 2011<br>
-            Suporte ao usuário e desenvolvimento de aplicativos para impressoras fiscais, além de homologação de softwares.</p>
-        </section>
-
-        <section class="education">
-            <h2>Educação</h2>
-            <p><strong>UNINTER BH Centro, Venda Nova e Contagem</strong><br>
-            Tecnologia da Informação<br>
-            Fevereiro 2023 - Dezembro 2026</p>
-
-            <p><strong>Escola Técnica Divina Providência</strong><br>
-            Técnico em Microinformática<br>
-            2015 - 2017</p>
-
-            <p><strong>SENAI</strong><br>
-            Mecânico de Manutenção Industrial<br>
-            1990 - 1992</p>
-        </section>
-
-        <section class="certifications">
-            <h2>Certificações</h2>
-            <p>Especialista em Hardware Dell</p>
-        </section>
-
-        <section class="skills">
-            <h2>Habilidades</h2>
-            <p>Vue.js, CAD, PHP</p>
-        </section>
-
-        <section class="languages">
-            <h2>Idiomas</h2>
-            <p>Espanhol (Básico)<br>Inglês (Básico)</p>
-        </section>
+            <br>Entre os pontos altos da minha trajetória está minha atuação como consultor para diversas empresas, onde ajudei a implementar soluções eficientes e impulsionar resultados. Sou apaixonado por Java e trabalho intensamente com programação orientada a objetos, sempre focado em escrever códigos limpos, eficientes e testáveis. Nos últimos anos, tenho mergulhado no mundo da Inteligência Artificial Generativa, participando de bootcamps e desafios de engenharia de prompts, buscando sempre ampliar minha atuação profissional.
+            
+            <br>Estou constantemente me aprimorando para enfrentar novos desafios e ajudar empresas a alcançarem seus objetivos tecnológicos, liderando equipes e promovendo inovações.
+            
+            <br> Sempre em busca de novos desafios, acredito que a chave para o sucesso é o aprendizado contínuo!</p>
     </div>
-    <section id="contato">
-        <div class="project">
-        <h2>Contato</h2>
-        <p>Você pode me contatar através dos seguintes meios:</p>
-        <ul>
-            <li>Email: <a href="mailto:ronaldolcoutinho75@gmail.com">ronaldolcoutinho75@gmail.com</a></li>
-            <li>Telefone: <a href="tel:+5531984359511">(31) 98435-9511</a></li>
-            <li>WhatsApp: <a href="https://wa.me/5531984359511" target="_blank">Clique aqui para me enviar uma mensagem</a></li>
-        </ul>
-        </div>
-    </section>
-    
-    <footer>
-        &copy; 2024 Meu Portfólio
-    </footer>
 
-    <script src="./script/scripts.js"></script>
+    <div class="experience mb-5" id="experience">
+        <h2 class="text-center">Experiência Profissional</h2>
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Escola Estadual Filomena Catzani</strong><br>Assistente Técnico (Julho 2023 - Presente)<br>Ribeirão das Neves, MG</li>
+            <li class="list-group-item"><strong>Autônomo</strong><br>Técnico de Computador e Suporte Técnico (Junho 2023 - Agosto 2023)<br>Brasil</li>
+            <li class="list-group-item"><strong>Telemont</strong><br>Desenhista de Projeto Elétrico (Novembro 2022 - Junho 2023)<br>Belo Horizonte, MG</li>
+            <li class="list-group-item"><strong>Escola Estadual Romualdo José da Costa</strong><br>Professor de Informática (Fevereiro 2021 - Novembro 2022)<br>Ribeirão das Neves, MG</li>
+            <li class="list-group-item"><strong>Secretaria Estadual de Educação</strong><br>Professor de Informática (Setembro 2021 - Dezembro 2021)<br>Minas Gerais</li>
+            <li class="list-group-item"><strong>ExpressoPrint</strong><br>Artista de Fine Art (Janeiro 2018 - Janeiro 2020)<br>Ribeirão das Neves, MG</li>
+            <li class="list-group-item"><strong>Finantza</strong><br>Administrador de Projetos (Janeiro 2016 - Janeiro 2017)<br>Ribeirão das Neves, MG</li>
+            <li class="list-group-item"><strong>Fernão Dias Logística</strong><br>Analista de Sistemas (Julho 2016 - Agosto 2016)<br>Ribeirão das Neves, MG</li>
+            <li class="list-group-item"><strong>Sistema Divina Providência</strong><br>Instrutor de Informática (Março 2014 - Junho 2016)<br>Ribeirão das Neves, MG</li>
+            <li class="list-group-item"><strong>Esferatech Serviços de Tecnologia</strong><br>Analista Jr (Junho 2012 - Setembro 2014)</li>
+            <li class="list-group-item"><strong>Brainstron do Brasil</strong><br>Técnico de Campo (Janeiro 2004 - Julho 2013)<br>Belo Horizonte e Região, MG</li>
+            <li class="list-group-item"><strong>Jorge Luiz Carvalho ME</strong><br>Técnico de Suporte Desenvolvedor (Julho 2010 - Janeiro 2011)</li>
+        </ul>
+    </div>
+
+    <div class="education mb-5">
+        <h2 class="text-center">Educação</h2>
+        <ul class="list-group">
+            <li class="list-group-item"><strong>UNINTER BH</strong><br>Tecnologia da Informação (Fevereiro 2023 - Dezembro 2026)</li>
+            <li class="list-group-item"><strong>Escola Técnica Divina Providência</strong><br>Técnico em Microinformática (2015 - 2017)</li>
+            <li class="list-group-item"><strong>SENAI</strong><br>Mecânico de Manutenção Industrial (1990 - 1992)</li>
+        </ul>
+    </div>
+
+    <div class="certifications mb-5">
+        <h2 class="text-center">Certificações</h2>
+        <p class="text-center">Especialista em Hardware Dell</p>
+    </div>
+
+    <div class="skills mb-5">
+        <h2 class="text-center">Habilidades</h2>
+        <p class="text-center">Vue.js, CAD, PHP</p>
+    </div>
+
+    <div class="languages mb-5">
+        <h2 class="text-center">Idiomas</h2>
+        <p class="text-center">Espanhol (Básico)<br>Inglês (Básico)</p>
+    </div>
+
+    <section id="contato" class="mt-5">
+        <h2 class="text-center">Contato</h2>
+        <p class="text-center">Você pode me contatar através dos seguintes meios:</p>
+        <ul class="list-group">
+            <li class="list-group-item text-center">Email: <a href="mailto:ronaldolcoutinho75@gmail.com">ronaldolcoutinho75@gmail.com</a></li>
+            <li class="list-group-item text-center">Telefone: <a href="tel:+5531984359511">(31) 98435-9511</a></li>
+            <li class="list-group-item text-center">WhatsApp: <a href="https://wa.me/5531984359511" target="_blank">Clique aqui para me enviar uma mensagem</a></li>
+        </ul>
+    </section>
+</div>
+
+<footer class="bg-light text-center p-4">
+    &copy; 2024 Meu Portfólio
+</footer>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

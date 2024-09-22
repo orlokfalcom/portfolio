@@ -1,105 +1,35 @@
-/* Reset de margens e preenchimentos para garantir consistência entre navegadores */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilo base para o corpo da página */
 body {
-    font-family: Arial, sans-serif; /* Define a fonte principal */
-    background-color: #ffffff; /* Cor de fundo */
-    line-height: 1.6; /* Define o espaçamento entre linhas */
-    color: #333333; /* Cor do texto */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Cor de fundo suave */
 }
 
-/* Estilo para o cabeçalho com alinhamento flexível */
-header {
-    background-color: #003366; /* Azul Escuro */
-    color: white;
-    padding: 20px 0;
-    display: flex; /* Usa Flexbox para alinhamento */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Alinha verticalmente no centro */
-    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+h2 {
+    color: #343a40; /* Cor do título */
 }
 
-/* Estilo para a logo */
+.nav-link {
+    color: #ffffff; /* Cor dos links */
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Sublinhar ao passar o mouse */
+}
+
 .logo {
-    width: 25%; /* Define a largura da logo */
-    height: auto; /* Mantém a proporção da logo */
-    margin-right: 15px; /* Espaço entre a logo e o texto */
-    border-radius: 10px; /* Adiciona cantos arredondados com um raio de 10 pixels */
-    float: left; /* Faz a logo flutuar à esquerda, permitindo que o texto envolva ao redor */
+    border-radius: 10%; /* Logo com bordas suaves */
 }
 
-/* Estilo para o título do cabeçalho */
-header h1 {
-    flex: 1; /* Faz com que o título ocupe o espaço restante */
-    text-align: center; /* Centraliza os itens de navegação */
-    margin: 0; /* Remove margem para alinhar corretamente com a logo */
+.list-group-item {
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    border: 1px solid #ced4da; /* Borda suave */
+    transition: border-color 0.3s; /* Transição suave para hover */
 }
 
-/* Estilo para o menu de navegação */
-nav {
-    width: 100%; /* Faz o menu ocupar a largura completa */
-    text-align: center; /* Centraliza os itens de navegação */
-    margin-top: 10px; /* Adiciona espaçamento acima do menu */
-}
-
-/* Estilo para os botões de navegação */
-.nav-btn {
-    display: inline-block; /* Faz o botão se comportar como um bloco em linha */
-    background-color: #007bff; /* Azul Claro */
-    color: white; /* Cor do texto do botão */
-    padding: 10px 20px; /* Adiciona padding para os botões */
-    text-decoration: none; /* Remove o sublinhado do texto */
-    border-radius: 5px; /* Bordas arredondadas */
-    font-size: 1rem; /* Tamanho da fonte */
-    font-weight: bold; /* Fonte em negrito */
-    transition: background-color 0.3s, transform 0.2s; /* Transições suaves para a cor de fundo e transformação */
-    margin: 0 10px; /* Adiciona espaçamento entre os botões */
-}
-
-/* Adiciona efeito de hover para os botões */
-.nav-btn:hover {
-    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
-    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão */
-}
-
-/* Destaca o item ativo */
-.nav-btn.active {
-    background-color: #0056b3; /* Cor de fundo do item ativo */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adiciona um contorno ao redor do botão ativo */
-}
-
-section {
-    padding: 20px;
-    max-width: 800px; /* Limita a largura máxima */
-    margin: auto; /* Centraliza a seção */
-}
-
-/* Estilo para os blocos de projeto */
-.project {
-    background-color: #ffffff; /* Fundo branco para o bloco */
-    margin-bottom: 20px; /* Espaçamento inferior entre os blocos */
-    padding: 15px 25px 20px 25px; /* Margens internas: cima, direita, baixo, esquerda */
-    border-radius: 5px; /* Bordas arredondadas */
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar o bloco */
-}
-
-/* Estilo para as imagens dos projetos */
-.project img {
-    width: 100%; /* Imagem ocupa toda a largura do bloco */
-    border-radius: 5px;
-    margin-bottom: 10px;
-    height: auto; /* Mantém a proporção da imagem */
+.list-group-item:hover {
+    border-color: #007bff; /* Cor da borda ao passar o mouse */
 }
 
 footer {
-    text-align: center; /* Centraliza o texto */
-    padding: 20px; /* Adiciona 20px de padding ao redor do conteúdo */
-    background-color: #003366; /* Azul Escuro */
-    color: white; /* Cor do texto */
-    margin: 20px 0; /* Adiciona uma margem de 20px acima e abaixo do rodapé */
+    margin-top: 30px;
 }
