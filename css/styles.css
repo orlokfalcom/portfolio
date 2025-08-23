@@ -1,28 +1,79 @@
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4; /* Cor de fundo suave */
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
-h2 {
-    color: #343a40; /* Cor do título */
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
 }
 
-.nav-link {
-    color: #ffffff; /* Cor dos links */
+.b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
-.nav-link:hover {
-    text-decoration: underline; /* Sublinhar ao passar o mouse */
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-bg: #6528e0;
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+.bd-mode-toggle {
+    z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
 }
 
 .logo {
     width: 150px; /* Ajuste a largura conforme necessário */
     height: auto; /* Mantém a proporção da imagem */
-    float: left; /* Faz a logo flutuar à direita */
-    margin-right: 20px; /* Espaço à esquerda da logo */
-    margin-bottom: 10px; /* Espaço abaixo da logo, se necessário */
-    margin-top: 10px; /* Espaço acima da logo, se necessário */
+    display: block;
+    margin: 20px auto; /* Centraliza a logo */
+    margin-left: 20px; /* Espaço entre a logo e o texto */
 }
 
 section::after {
@@ -31,17 +82,91 @@ section::after {
     clear: both;
 }
 
-
 .list-group-item {
     border-radius: 0.5rem; /* Bordas arredondadas */
-    border: 1px solid #ced4da; /* Borda suave */
-    transition: border-color 0.3s; /* Transição suave para hover */
+    border: 1px solid #555; /* Borda suave */
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    transition: border-color 0.3s, background-color 0.3s; /* Transição suave */
 }
 
 .list-group-item:hover {
     border-color: #007bff; /* Cor da borda ao passar o mouse */
+    background-color: #3b3b3b; /* Cor de fundo ao passar o mouse */
 }
 
 footer {
     margin-top: 30px;
+    background-color: #111;
+    color: #e0e0e0;
+    font-family: 'UnifrakturMaguntia', cursive;
+    padding: 20px;
+}
+
+footer a {
+    color: #e0e0e0;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #1b1b1b;
+    color: #e0e0e0;
+    font-family: 'UnifrakturMaguntia', cursive;
+}
+
+h2, p, nav a {
+    font-family: 'UnifrakturMaguntia', cursive;
+    color: #e0e0e0;
+}
+
+nav.navbar {
+    background-color: #3b3b3b;
+}
+
+nav a {
+    color: #e0e0e0 !important;
+}
+
+.navbar-toggler {
+    background-color: #555;
+}
+
+.dropdown-menu {
+    background-color: #2b2b2b;
+    border: none;
+}
+
+.dropdown-item {
+    color: #e0e0e0;
+}
+
+.dropdown-item:hover {
+    background-color: #3b3b3b;
+}
+
+.container h2 {
+    margin-top: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+
+form input[type="search"] {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #e0e0e0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+button.navbar-toggler-icon {
+    color: #e0e0e0;
+}
+.header {
+    display: flex;
+    align-items: flex-start; /* Alinha o texto com o topo da imagem */
+}
+.header-text {
+    flex: 1; /* O texto ocupará o espaço restante */
 }
